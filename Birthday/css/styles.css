@@ -1,0 +1,84 @@
+body
+{
+  background-image: linear-gradient(to right top, white, #c5d5c5, #b2c2bf, #9fa9a3, #484f4f, black);
+  url(https://media1.tenor.com/images/a3e1462ce283d8694e0458336d1c0e59/tenor.gif?itemid=16873435.gif);
+}
+
+.card {
+	 position: relative;
+	 width: 250px;
+	 height: 375px;
+	 border: 10px solid white;
+	 margin: 60px auto 0 auto;
+   background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(255, 255, 255, 0.5)),
+       url(https://m.media-amazon.com/images/I/61LTl4+02jL._SL1500_.jpg);
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	 background-color: black;
+}
+ .card .text-container {
+	 width: 80%;
+	 height: 80%;
+	 margin: auto;
+}
+.card p {
+	 font-size: 1.1;
+	 line-height: 1.1;
+	 font-family: 'roboto';
+	 color: black;
+	 font-style: italic;
+	 text-align: center;
+	 margin: 30px auto 0px auto;
+}
+.card .front {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 margin: -10px 0px 0px -10px;
+	 border: 10px solid black;
+	 backface-visibility: hidden;
+	 background-color: white;
+	/* background-image: url($cover-image);
+	 */
+	 background-size: contain;
+	 transform-style: preserve-3d;
+	 transform-origin: 0% 50%;
+	 transform: perspective(800px) rotateY(0deg);
+	 transition: all 0.8s ease-in-out;
+}
+ .card:hover .front {
+	 transform: perspective(800px) rotateY(-170deg);
+	 background-color: black;
+}
+ .card:hover .back {
+	 transform: perspective(800px) rotateY(-170deg);
+	 background-color: black;
+}
+ .card .back {
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 border: 10px solid black;
+	 margin: -10px 0px 0px -10px;
+	 backface-visibility: visible;
+	 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
+	 transform-style: preserve-3d;
+	 transform-origin: 0% 50%;
+	 transform: perspective(800px) rotateY(0deg);
+	 transition: all 0.8s ease-in-out;
+	 background-color: #e6f0e6;
+	 box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.imgset
+{
+  position: relative;
+  z-index: 1;
+  margin-bottom: -215px;
+}
+.imgset img
+{
+    box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
